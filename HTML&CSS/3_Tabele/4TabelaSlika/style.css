@@ -1,0 +1,15 @@
+table {
+    width: 800px;
+    height: 500px;
+    border-spacing: 2px;
+    padding: 3px;
+    border-spacing: 8px;
+    background-image: url("download.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+table, th, td {
+    border: 2px solid blue;
+}
