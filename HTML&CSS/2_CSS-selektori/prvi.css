@@ -1,0 +1,25 @@
+ div {
+    color: blue;
+} 
+
+div div {
+    color: green; 
+}
+
+div div span {
+    color: yellow;
+}
+
+div span  {
+    color: grey;
+}
+
+div#treci {
+    background-color: red;
+    color: white;
+}
+
+/* div#”treci” {
+    background-color: red;
+    color: white;
+} */
