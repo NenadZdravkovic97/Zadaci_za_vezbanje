@@ -1,0 +1,60 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    color: orange;
+    font-size: 40px;
+    letter-spacing: 4px;
+}
+
+#porodica {
+    color: blue;
+    font-size: 20px;
+}
+
+#prijatelji {
+    color: green;
+    font-size: 20px;
+}
+
+#kolege {
+    color: red;
+    font-size: 20px;
+}
+
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 20px;
+}
+div{
+    text-align: center;
+}
+img {
+    height: 200px;
+    width:200px;
+    border-radius: 50%;
+}
+
+#mojBroj {
+    border: 3px solid greenyellow;
+}
+
+.porodica {
+    border: 3px dotted blue;
+}
+
+.prijatelji {
+    border: 3px dotted green;
+}
+
+.kolege {
+    border: 3px dotted red;
+}
+
+.tekst {
+    position: relative;
+    top: -55px;
+}
