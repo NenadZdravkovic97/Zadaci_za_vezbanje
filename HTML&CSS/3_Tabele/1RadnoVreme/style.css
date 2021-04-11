@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+table {
+    width: 70%;
+    height: 70%;
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 1px solid orange;
+}
+
+td, th {
+    padding: 15px;
+}
+
+td {
+    border-left: 1px solid silver;
+    border-right: 1px solid silver;
+}
+
+
+#heading {
+    letter-spacing: 5px;
+    font-size: 25px;
+    background-color: orange;
+    color: white;
+}
+
+.secondRow {
+    padding: 15px;
+    font-weight: bold;
+
+}
+
+.center{
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.firstColumn {
+    width: 45%;
+}
+
+.totalHours {
+    background-color: grey;
+    color: white;
+    font-weight: 600;
+}
+
+table tr:nth-child(even) {
+    background-color: #FDE9D9;
+}
