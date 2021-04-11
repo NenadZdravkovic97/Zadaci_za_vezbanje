@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+table {
+    width: 70%;
+    height: 50%;
+    border-spacing: 2px;
+    background: lightgrey;
+}
+
+td, th {
+    padding: 5px;
+}
+.casoviBorder {
+    border: none;
+}
+
+
