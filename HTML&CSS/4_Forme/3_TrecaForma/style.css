@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+.form {
+    /* width: 60%; */
+    /* height: 80%; */
+    /* margin: auto; */
+    /* text-align: center; */
+    /* display: inline-block; */
+    /* margin: 0 auto; */
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    
+}
+
+/* input, label {
+    display:block;
+    padding: 20px;
+} */
+
+label{
+    font-size: 15px;
+    color: grey;
+}
+
+label, input {
+    padding: 20px;
+}
+
+input {
+    width: 300px;
+    border: 0;
+    border-bottom: 1px solid lightgrey;
+}
+
+.mmyy {
+    /* display: inline-block; */
+    width: 90px;
+}
+
+
+
+input[type="tel"] {
+    background-image: url('kreditna.png');
+    background-repeat: no-repeat;
+}
+
+.cvc {
+    width: 90px;
+}
+
+.checkbox {
+    float: left;
+    /* display: inline-block; */
+}
+
+
+.checkboxBlock {
+    display: block;
+    margin-top: -34px;
+}
+
+input[type="checkbox"] {
+    margin-left: -144px;
+}
+
+
+input[type="submit"] {
+    background-color: #24CF5F;
+    color: white;
+}
+    
+
+
+
+
+
+    
