@@ -1,0 +1,24 @@
+div {
+    position: relative;
+}
+
+.prvi {
+    position: static;
+}
+
+.drugi {
+    position: relative;
+    left: 100px;
+}
+
+.treci {
+    position: absolute;
+    bottom: 50px;
+    left: 100px;
+}
+
+.cetvrti {
+    position: fixed;
+    top: 400px;
+    right: 5px;
+}
