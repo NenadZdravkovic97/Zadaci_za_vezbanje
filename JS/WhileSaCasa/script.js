@@ -170,15 +170,6 @@ console.log(brojac);
 // 12.
 // Odrediti da li je dati prirodan broj n prost. Broj je prost ako je deljiv samo sa jedan i sa samim sobom.
 
-n = 4;
-
-if( n % 1 == 0 && n % n ==0 ){
-    console.log("Prost broj");
-} else {
-    console.log("Slozen");
-}
-
-
 
 
 
