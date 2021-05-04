@@ -11,3 +11,33 @@ img {
     height: 100px;
     width: 100px;
 }
+table {
+    border-collapse: collapse;
+}
+tr, td, th {
+    border: 1px solid black;
+    width: 150px;
+    height: 50px;
+}
+
+.obojen {
+    background-color: pink;
+}
+
+.obojenLi {
+    color: red;
+}
+
+span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+}
+
+.crna {
+    background-color: black;
+    color: white;
+}
