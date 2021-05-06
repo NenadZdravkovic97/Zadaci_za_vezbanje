@@ -58,6 +58,26 @@ if (hours < 12) {
     console.log(`vece je sada je ${finalTime}`);
 }
 
+let currentDateTime = new Date();
+// let hrs = currentDateTime.getHours();
+let hrs = 14;
+let mnts = currentDateTime.getMinutes();
+let AMPM = hrs >= 12 ? 'PM' : 'AM';
+hrs = hrs % 12;
+hrs = hrs ? hrs : 12;
+mnts = mnts < 10 ? '0' + mnts : mnts;
+let result = hrs + ':' + mnts + ' ' + AMPM;
+
+console.log(result)
+
+if(AMPM == "AM") {
+    console.log("Dobro jutro")
+} else {
+    console.log("dobar dan")
+}
+
+
+
 // 5.
 // Za preuzetu godinu sa računara i unetu godinu rođenja izračunati da li je osoba punoletna ili maloletna.
 
