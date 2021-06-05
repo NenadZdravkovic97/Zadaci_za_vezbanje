@@ -1,0 +1,26 @@
+[
+    {
+        "name": "fruit1",
+        "number": "5"
+    },
+    {
+        "name": "fruit2",
+        "number": "7"
+    },
+    {
+        "name": "Blueberries",
+        "number": "7"
+    },
+    {
+        "name": "Raspberries",
+        "number": "7"
+    },
+    {
+        "name": "Banana",
+        "number": "7"
+    },
+    {
+        "name": "Berries",
+        "number": "7"
+    }
+]
