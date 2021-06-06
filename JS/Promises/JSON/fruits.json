@@ -1,26 +1,32 @@
 [
     {
         "name": "fruit1",
-        "number": "5"
+        "number": "5",
+        "tezina": "10"
     },
     {
         "name": "fruit2",
-        "number": "7"
+        "number": "7",
+        "tezina": "12"
     },
     {
         "name": "Blueberries",
-        "number": "7"
+        "number": "7",
+        "tezina": "14"
     },
     {
         "name": "Raspberries",
-        "number": "7"
+        "number": "7",
+        "tezina": "8"
     },
     {
         "name": "Banana",
-        "number": "7"
+        "number": "7",
+        "tezina": "2"
     },
     {
         "name": "Berries",
-        "number": "7"
+        "number": "7",
+        "tezina": "10"
     }
 ]

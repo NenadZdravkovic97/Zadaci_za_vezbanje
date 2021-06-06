@@ -1,10 +1,12 @@
 [
     {
         "name": "vegetables1",
-        "number": "5"
+        "number": "5",
+        "tezina": "8"
     },
     {
         "name": "vegetables2",
-        "number": "7"
+        "number": "7",
+        "tezina": "2"
     }
 ]
