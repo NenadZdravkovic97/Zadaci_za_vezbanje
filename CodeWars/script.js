@@ -183,4 +183,108 @@ function duplicateCount(text) {
     return counter;
 }
 
-duplicateCount('indivisibility');
+// duplicateCount('indivisibility');
+
+// There is a queue for the self-checkout tills at the supermarket. Your task is write a function to calculate the total time required for all the customers to check out!
+
+// input
+// customers: an array of positive integers representing the queue. Each integer represents a customer, and its value is the amount of time they require to check out.
+// n: a positive integer, the number of checkout tills.
+// output
+// The function should return an integer, the total time required.
+
+// NIJE MOJE RESENJE
+function queueTime(customers, registers) {
+    let arr = [];
+
+    for (let i = 0; i < registers; i++) arr[i] = 0;
+
+    for (let i = 0; i < customers.length; i++) {
+        arr[0] += customers[i];
+        arr.sort((a, b) => a - b);
+    }
+
+    return arr[arr.length - 1];
+}
+
+// Write a function that accepts an array of 10 integers (between 0 and 9), that returns a string of those numbers in the form of a phone number.
+
+// Example
+// createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]) // => returns "(123) 456-7890"
+
+function createPhoneNumber(numbers) {
+    numbers.forEach(number => {
+        if (number < 0) {
+            console.log('Error');
+        }
+    });
+
+    let first = numbers.slice(0, 3);
+    let second = numbers.slice(3, 6);
+    let third = numbers.slice(6);
+
+    let str = '';
+    first.forEach(elem => {
+        let elemStr = elem.toString();
+        str += elemStr;
+    });
+
+    str = `(${str})`;
+
+    let str2 = '';
+    second.forEach(elem => {
+        let elemStr = elem.toString();
+        str2 += elemStr;
+    });
+
+    let str3 = '';
+    third.forEach(elem => {
+        let elemStr = elem.toString();
+        str3 += elemStr;
+    });
+
+    let phoneNumber = `${str} ${str2}-${str3}`;
+    return phoneNumber;
+}
+
+// createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]); // => returns "(123) 456-7890"
+
+// Write a function dirReduc which will take an array of strings and returns an array of strings with the needless directions removed (W<->E or S<->N side by side).
+
+// The Haskell version takes a list of directions with data Direction = North | East | West | South.
+// The Clojure version returns nil when the path is reduced to nothing.
+// The Rust version takes a slice of enum Direction {North, East, West, South}.
+
+let directions = ['NORTH', 'EAST', 'WEST', 'SOUTH', 'WEST', 'WEST'];
+function dirReduc(arr) {
+    let invalidDirs = array => {
+        let counter = 0;
+        for (let i = 0; i < array.length - 1; i++) {
+            if (
+                (array[i] === 'NORTH' && array[i + 1] === 'SOUTH') ||
+                (array[i] === 'SOUTH' && array[i + 1] === 'NORTH') ||
+                (array[i] === 'EAST' && array[i + 1] === 'WEST') ||
+                (array[i] === 'WEST' && array[i + 1] === 'EAST')
+            ) {
+                counter++;
+            }
+        }
+        return counter > 0;
+    };
+    while (invalidDirs(arr)) {
+        for (let i = 0; i < arr.length - 1; i++) {
+            if (
+                (arr[i] === 'NORTH' && arr[i + 1] === 'SOUTH') ||
+                (arr[i] === 'SOUTH' && arr[i + 1] === 'NORTH') ||
+                (arr[i] === 'EAST' && arr[i + 1] === 'WEST') ||
+                (arr[i] === 'WEST' && arr[i + 1] === 'EAST')
+            ) {
+                arr.splice(i, 2);
+            }
+        }
+    }
+
+    return arr;
+}
+
+// console.log(dirReduc(directions));
